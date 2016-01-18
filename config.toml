@@ -2,6 +2,9 @@ baseurl = "http://gertvangool.be/"
 languageCode = "en-us"
 title = "Gert Van Gool"
 theme = "casper"
+footnotereturnlinkcontents = "↩"
+editor = "vim"
+newContentEditor = "vim"
 
 [params]
   #description = "this is my description"
