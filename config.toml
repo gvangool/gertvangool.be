@@ -28,14 +28,20 @@ newContentEditor = "vim"
   quote = "quote/:slug/"
 
 [[menu.main]]
+  name = "Home"
+  weight = -500
+  identifier = "home"
+  url = "/"
+
+[[menu.main]]
   name = "Blog"
-  weight = -120
+  weight = -100
   identifier = "blog"
   url = "/post/"
 
 [[menu.main]]
   name = "Quotes"
-  weight = -110
+  weight = -50
   identifier = "quotes"
   url = "/quote/"
 
