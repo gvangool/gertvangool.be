@@ -1,3 +1,36 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "http://gertvangool.be"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Gert Van Gool"
+theme = "casper"
+
+[params]
+  #description = "this is my description"
+  cover = "assests/img/20100522-0731-2000x1296.jpg"
+  author = "Gert Van Gool"
+  authorlocation = "Blankenberge, Belgium"
+  authorwebsite = "http://gertvangool.be"
+  bio= "A 29 year old Belgian software developer, currently living in Blankenberge, Belgium"
+  #logo = "images/logo.png"
+  googleAnalyticsUserID = "UA-24721395-1"
+  githubName = "gvangool"
+  twitterName = "gvangool"
+  #facebookName = "gvangool"
+  #linkedinName = "gertvangool"
+  # set true if you are not proud of using Hugo (true will hide the footer note "Proudly published with HUGO.....")
+  hideHUGOSupport = false
+
+
+[permalinks]
+  post = "posts/:year/:slug/"
+
+[[menu.main]]
+  name = "My Blog"
+  weight = -120
+  identifier = "blog"
+  url = "/"
+
+[[menu.main]]
+  name = "About me"
+  weight = 500
+  identifier = "about"
+  url = "/about/"
