@@ -22,8 +22,8 @@ The idea is rather simple:
   theme <https://github.com/vjeantet/hugo-theme-casper>`_) are up to date.
 - In ``dependencies > pre``, we download and install the latest `Hugo
   <http://gohugo.io>`_ version and make it available in ``$PATH``. If you want
-  to use `Pygments`_ for code highlighting, you'll need to add a
-  `requirements file
+  to use `Pygments <http://pygments.org/>`_ for code highlighting, you'll need
+  to add a `requirements file
   <https://github.com/gvangool/gertvangool.be/blob/3865bc80d2da9bee08e2dd848a70d5ddfeb2e900/requirements.txt>`_
   as well.
 - In ``deployment`` (together with `a deploy script
@@ -62,3 +62,6 @@ That comes together in the following ``circle.yml`` file:
          - rm -rf public
          - git clone git@github.com:gvangool/gvangool.github.io.git public
          - ./deploy.sh
+
+Don't forget to add a SSH deployment key into Circle CI's project page
+(``Settings > Permissions > SSH Permissions``).
