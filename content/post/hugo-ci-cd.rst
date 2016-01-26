@@ -54,5 +54,6 @@ That comes together in the following ``circle.yml`` file:
      master:
        branch: master
        commands:
+         - rm -rf public
          - git clone git@github.com:gvangool/gvangool.github.io.git public
          - ./deploy.sh

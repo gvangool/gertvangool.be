@@ -22,5 +22,6 @@ deployment:
   master:
     branch: master
     commands:
+      - rm -rf public
       - git clone git@github.com:gvangool/gvangool.github.io.git public
       - ./deploy.sh
