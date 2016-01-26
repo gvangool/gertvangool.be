@@ -17,3 +17,10 @@ dependencies:
 test:
   override:
     - hugo -v
+
+deployment:
+  master:
+    branch: master
+    commands:
+      - git clone git@github.com:gvangool/gvangool.github.io.git public
+      - ./deploy.sh
