@@ -1,7 +1,7 @@
 +++
 comments = false
 date = "2016-01-26T16:44:02+01:00"
-image = ""
+image = "/uploads/post/gohugo-io-header.png"
 menu = ""
 share = false
 slug = "hugo-ci-cd"
@@ -15,21 +15,25 @@ For better automation (and easier updating), I've added `CircleCI
 It will automatically deploy any pushes to the master into a `separate git
 repository <https://github.com/gvangool/gvangool.github.io>`_ (to take
 advantage of `Github Pages <https://pages.github.com/>`_.
+<!--more-->
 
 The idea is rather simple:
 
+- Dependencies:  e download and install the latest `Hugo <http://gohugo.io>`_
+  version and make it available in ``~/bin`` which is in ``$PATH`` (this
+  happens in ``dependencies > pre``). For syntax highlighting, we need to use
+  `Pygments <http://pygments.org/>`_, we'll add a `requirements file
+  <https://github.com/gvangool/gertvangool.be/blob/3865bc80d2da9bee08e2dd848a70d5ddfeb2e900/requirements.txt>`_
+  which CircleCI automatically installs in a virtualenv.
 - In ``checkout > post`` we make sure that all submodules (in this case `the
   theme <https://github.com/vjeantet/hugo-theme-casper>`_) are up to date.
-- In ``dependencies > pre``, we download and install the latest `Hugo
-  <http://gohugo.io>`_ version and make it available in ``$PATH``. If you want
-  to use `Pygments <http://pygments.org/>`_ for code highlighting, you'll need
-  to add a `requirements file
-  <https://github.com/gvangool/gertvangool.be/blob/3865bc80d2da9bee08e2dd848a70d5ddfeb2e900/requirements.txt>`_
-  as well.
-- In ``deployment`` (together with `a deploy script
+- For actual tests, we just run Hugo in verbose mode. It won't catch all the
+  errors, but at least we have a good idea.
+- Deployment: Since we just ran our tests, the ``public`` directory still
+  contains the website. So before we clone the Github Pages repository, we
+  need to empty that directory. The `deploy script
   <https://github.com/gvangool/gertvangool.be/blob/2402b6baa0fc9ce74916e52a5d8ffe214bc81050/deploy.sh>`_)
-  we clone the Github Pages repository and update it with the newly build
-  code.
+  will rebuild the website and commit it to Github.
 
 That comes together in the following ``circle.yml`` file:
 
