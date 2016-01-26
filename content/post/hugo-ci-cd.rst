@@ -18,13 +18,18 @@ advantage of `Github Pages <https://pages.github.com/>`_.
 
 The idea is rather simple:
 
-- in ``checkout > post`` we make sure that all submodules (in this case `the
-  theme <https://github.com/vjeantet/hugo-theme-casper>`_) are up to date
-- in ``dependencies > pre``, we download and install the latest `Hugo
-  <http://gohugo.io>`_ version and make it available in ``$PATH``
-- in ``deployment`` (together with `a deploy script
+- In ``checkout > post`` we make sure that all submodules (in this case `the
+  theme <https://github.com/vjeantet/hugo-theme-casper>`_) are up to date.
+- In ``dependencies > pre``, we download and install the latest `Hugo
+  <http://gohugo.io>`_ version and make it available in ``$PATH``. If you want
+  to use `Pygments`_ for code highlighting, you'll need to add a
+  `requirements file
+  <https://github.com/gvangool/gertvangool.be/blob/3865bc80d2da9bee08e2dd848a70d5ddfeb2e900/requirements.txt>`_
+  as well.
+- In ``deployment`` (together with `a deploy script
   <https://github.com/gvangool/gertvangool.be/blob/2402b6baa0fc9ce74916e52a5d8ffe214bc81050/deploy.sh>`_)
-  we clone the hosted and update it with the newly build code
+  we clone the Github Pages repository and update it with the newly build
+  code.
 
 That comes together in the following ``circle.yml`` file:
 
