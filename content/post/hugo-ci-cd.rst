@@ -14,12 +14,12 @@ For better automation (and easier updating), I've added `CircleCI
 <https://circleci.com/>`_ for automated building and testing of the website.
 It will automatically deploy any pushes to the master into a `separate git
 repository <https://github.com/gvangool/gvangool.github.io>`_ (to take
-advantage of `Github Pages <https://pages.github.com/>`_.
+advantage of `Github Pages <https://pages.github.com/>`_).
 <!--more-->
 
 The idea is rather simple:
 
-- Dependencies:  e download and install the latest `Hugo <http://gohugo.io>`_
+- Dependencies: we download and install the latest `Hugo <http://gohugo.io>`_
   version and make it available in ``~/bin`` which is in ``$PATH`` (this
   happens in ``dependencies > pre``). For syntax highlighting, we need to use
   `Pygments <http://pygments.org/>`_, we'll add a `requirements file
