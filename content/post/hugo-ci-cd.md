@@ -5,7 +5,7 @@ image = "/uploads/post/gohugo-io-header.png"
 menu = ""
 share = false
 slug = "hugo-ci-cd"
-#tags = ["hugo", "ci", "cd"]
+tags = ["hugo", "ci", "cd"]
 title = "Continuous deployment with Hugo"
 
 +++
