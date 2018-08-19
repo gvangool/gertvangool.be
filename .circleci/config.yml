@@ -11,18 +11,17 @@ jobs:
           name: "Run Hugo"
           command: HUGO_ENV=production hugo -v -s ~/project/
       - add_ssh_keys
-      - deploy:
-          command: |
-            git config --global user.name "CircleCI"
-            git config --global user.email "circleci@circleci.com"
-            if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              cd ~/project/
-              rm -rf public
-              git clone git@github.com:gvangool/gvangool.github.io.git public
-              ./deploy.sh
-            fi
-
-
+  deploy:
+    docker:
+      - image: cibuilds/hugo:0.47
+    working_directory: ~/project
+    steps:
+      - run: |
+          git config --global user.name "CircleCI"
+          git config --global user.email "circleci@circleci.com"
+          cd ~/project/
+          git clone git@github.com:gvangool/gvangool.github.io.git public
+          ./deploy.sh
 
 workflows:
   version: 2
