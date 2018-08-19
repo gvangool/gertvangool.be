@@ -1,0 +1,37 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: cibuilds/hugo:0.47
+    working_directory: ~/project
+    steps:
+      - checkout
+      - run: git submodule update --init --recursive
+      - run:
+          name: "Run Hugo"
+          command: HUGO_ENV=production hugo -v -s ~/project/
+      - add_ssh_keys
+      - deploy:
+          command: |
+            git config --global user.name "CircleCI"
+            git config --global user.email "circleci@circleci.com"
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              cd ~/project/
+              rm -rf public
+              git clone git@github.com:gvangool/gvangool.github.io.git public
+              ./deploy.sh
+            fi
+
+
+
+workflows:
+  version: 2
+  build-and-deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
