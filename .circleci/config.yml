@@ -15,6 +15,7 @@ jobs:
       - image: cibuilds/hugo:0.47
     working_directory: ~/project
     steps:
+      - checkout
       - add_ssh_keys
       - run: ssh-keyscan github.com > ~/.ssh/known_hosts
       - run: |
