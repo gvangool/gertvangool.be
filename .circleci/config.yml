@@ -10,16 +10,17 @@ jobs:
       - run:
           name: "Run Hugo"
           command: HUGO_ENV=production hugo -v -s ~/project/
-      - add_ssh_keys
   deploy:
     docker:
       - image: cibuilds/hugo:0.47
     working_directory: ~/project
     steps:
+      - add_ssh_keys
+      - run: ssh-keyscan github.com > ~/.ssh/known_hosts
       - run: |
           git config --global user.name "CircleCI"
           git config --global user.email "circleci@circleci.com"
-          cd ~/project/
+          rm -rf public
           git clone git@github.com:gvangool/gvangool.github.io.git public
           ./deploy.sh
 
