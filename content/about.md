@@ -11,6 +11,6 @@ title = "About me"
 
 +++
 
-My name is Gert Van Gool. I'm a 29 year old Belgian, currently living with my
-wife in Blankenberge, Belgium. I'm a software developer who dabbles in system
+My name is Gert Van Gool. I'm a 32 year old Belgian, currently working in
+Berlin, Germany. I'm a software developer who dabbles in system
 administration and photography.
