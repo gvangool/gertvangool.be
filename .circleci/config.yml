@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: cibuilds/hugo:0.47
+      - image: cibuilds/hugo:0.53
     working_directory: ~/project
     steps:
       - checkout
@@ -12,10 +12,11 @@ jobs:
           command: HUGO_ENV=production hugo -v -s ~/project/
   deploy:
     docker:
-      - image: cibuilds/hugo:0.47
+      - image: cibuilds/hugo:0.53
     working_directory: ~/project
     steps:
       - checkout
+      - run: git submodule update --init --recursive
       - add_ssh_keys
       - run: ssh-keyscan github.com > ~/.ssh/known_hosts
       - run: |
