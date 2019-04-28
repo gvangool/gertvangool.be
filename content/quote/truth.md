@@ -7,7 +7,6 @@ image = ""
 share = false
 tags = ["quotes"]
 slug = "truth"
-
 +++
 
 The truth isn’t the truth until people believe you, and they can’t believe you

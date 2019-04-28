@@ -7,7 +7,7 @@ image = ""
 share = false
 tags = ["quotes"]
 slug = "simple-is-hard"
-
 +++
+
 Simple is hard. #design --- [Keegan
 Jones](http://twitter.com/keeg/status/35126429528100864)<!--more-->

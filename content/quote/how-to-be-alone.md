@@ -8,7 +8,6 @@ share = false
 tags = ["quotes"]
 title = "How To Be Alone"
 slug = "how-to-be-alone"
-
 +++
 
 If you are at first lonely, be patient. If you've not been alone much, or if

@@ -7,7 +7,6 @@ image = ""
 share = false
 tags = ["quotes"]
 slug = "finite-number-of-heart-beats"
-
 +++
 
 I believe that every human has a finite number of heart-beats. I don't intend

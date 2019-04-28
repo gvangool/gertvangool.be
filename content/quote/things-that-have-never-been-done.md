@@ -7,8 +7,8 @@ image = ""
 share = false
 tags = ["quotes"]
 slug = "things-that-have-never-been-done"
-
 +++
+
 Do things that have never been done. --- [Russell
 Kirsch](http://en.wikipedia.org/wiki/Russell_A._Kirsch)<!--more--> from [An
 Unexpected Ass Kicking](http://joelrunyon.com/two3/an-unexpected-ass-kicking/)

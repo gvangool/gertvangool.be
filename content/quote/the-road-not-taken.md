@@ -8,7 +8,6 @@ share = false
 slug = "the-road-not-taken"
 tags = ["quotes"]
 title = "The road not taken"
-
 +++
 
 > Two roads diverged in a yellow wood,<br>

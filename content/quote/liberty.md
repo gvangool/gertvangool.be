@@ -7,7 +7,6 @@ image = ""
 share = false
 tags = ["quotes"]
 slug = "liberty"
-
 +++
 
 Those who would give up essential liberty to purchase a little temporary

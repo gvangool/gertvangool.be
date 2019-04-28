@@ -7,7 +7,6 @@ image = ""
 share = false
 slug = "only-the-best"
 tags = ["quotes", "lego"]
-
 +++
 
 Kun det bedste er godt nok --- Lego motto

@@ -7,7 +7,6 @@ image = ""
 share = false
 tags = ["quotes", "software", "hardware"]
 slug = "software-hardware"
-
 +++
 
 People who are really serious about software should make their own hardware.

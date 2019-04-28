@@ -7,7 +7,6 @@ image = ""
 share = false
 tags = ["quotes"]
 slug = "willing"
-
 +++
 
 The most important thing a creative person can learn professionally is where

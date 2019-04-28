@@ -7,7 +7,6 @@ image = ""
 share = false
 slug = "authority"
 tags = ["quotes"]
-
 +++
 
 Authority, historically, gets bestowed on the gatekeepers of information, such

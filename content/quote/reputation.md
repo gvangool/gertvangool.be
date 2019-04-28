@@ -7,7 +7,6 @@ image = ""
 share = false
 tags = ["quotes"]
 slug = "reputation"
-
 +++
 
 It takes twenty years to build a reputation and five minutes to ruin it. If

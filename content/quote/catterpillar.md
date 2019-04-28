@@ -7,7 +7,6 @@ image = ""
 share = false
 tags = ["quotes"]
 slug = "catterpillar"
-
 +++
 
 {{% vimeo 6045312 %}}

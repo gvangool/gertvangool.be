@@ -7,7 +7,6 @@ image = ""
 share = false
 tags = ["quotes"]
 slug = "she-wont-live"
-
 +++
 
 It's too bad she won't live! But then again, who does?

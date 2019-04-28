@@ -8,7 +8,6 @@ share = false
 slug = "achieve-more-by-doing-less"
 tags = ["quotes"]
 title = ""
-
 +++
 
 ![Achieve more by doing less](/uploads/quote/achieve-more-by-doing-less.png)

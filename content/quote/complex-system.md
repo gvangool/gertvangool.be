@@ -7,7 +7,6 @@ image = ""
 share = false
 tags = ["quotes"]
 slug = "complex-system"
-
 +++
 
 A complex system that works is invariably found to have evolved from a simple

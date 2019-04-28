@@ -7,7 +7,6 @@ image = ""
 share = false
 tags = ["quotes"]
 slug = "tall-dark"
-
 +++
 
 ![I'm tall, dark and fantastic in the morning](/uploads/quote/tall-dark.jpg)

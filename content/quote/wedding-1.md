@@ -7,7 +7,6 @@ image = ""
 share = false
 slug = "wedding-1"
 tags = ["quotes"]
-
 +++
 
 > When *the wedding* is over and 

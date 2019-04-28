@@ -8,7 +8,6 @@ share = false
 slug = "litany-against-fear"
 tags = ["quotes"]
 title = "Litany against fear"
-
 +++
 
 I must not fear.<br/>

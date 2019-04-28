@@ -7,7 +7,6 @@ image = ""
 share = false
 tags = ["quotes"]
 slug = "love-is-like-pi"
-
 +++
 
 ![Love is like pi… natural, irrational, and very important.](/uploads/quote/love-is-like-pi.jpg)

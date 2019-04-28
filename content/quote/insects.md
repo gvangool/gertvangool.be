@@ -7,7 +7,6 @@ image = ""
 share = false
 tags = ["quotes"]
 slug = "insects"
-
 +++
 
 If all the insects were to disappear from the earth, within 50 years all life

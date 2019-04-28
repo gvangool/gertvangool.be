@@ -7,7 +7,6 @@ image = ""
 share = false
 slug = "r2d2-feels-empty-inside"
 tags = ["quotes"]
-
 +++
 
 [Benjamin Schwartz](https://twitter.com/BentSchwartz)'s tribute to
