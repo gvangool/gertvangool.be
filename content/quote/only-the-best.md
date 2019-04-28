@@ -11,3 +11,4 @@ tags = ["quotes", "lego"]
 
 Kun det bedste er godt nok --- Lego motto
 <!--more-->
+<!-- Only the best is good enough -->
